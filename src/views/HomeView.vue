@@ -1,12 +1,14 @@
 <script>
 import background from "../assets/images/background.jpeg"
 import brand from "../assets/images/brand.png"
+import doctors from "../assets/images/doctors.jpeg"
 
 export default (await import('vue')).defineComponent({
   data() {
     return {
       background,
-      brand
+      brand,
+      doctors
     }
   }
 })
@@ -99,7 +101,7 @@ export default (await import('vue')).defineComponent({
         <div class="row flex flex-wrap">
           <div class="col-lg-6 flex flex-direction-column justify-content-center">
             <div class="box-image-about">
-              <img :src="Doctors" class="doctors-image" alt="" />
+              <img :src="doctors" class="doctors-image" alt="" />
             </div>
           </div>
           <div class="col-lg-6 flex flex-direction-column justify-content-center">
