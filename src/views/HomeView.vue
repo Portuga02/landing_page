@@ -20,7 +20,7 @@ export default (await import('vue')).defineComponent({
         <div class="container flex justify-content-between">
           <div class="contacts color-gray-4">
             <p><font-awesome-icon class="top-icons" :icon="['fas', 'phone']" /> 99999-0326</p>
-            <p><font-awesome-icon class="top-icons" :icon="['fas', 'envelope']" /> ruan.vieira@tisaude.com</p>
+            <p><font-awesome-icon class="top-icons" :icon="['fas', 'envelope']" /> savio.gomes@tisaude.com</p>
             <p><font-awesome-icon class="top-icons" :icon="['fas', 'location-dot']" /> Rua Mariz e Barros, 311</p>
           </div>
           <div class="social-media">
