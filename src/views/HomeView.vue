@@ -223,7 +223,7 @@ export default (await import('vue')).defineComponent({
               </p>
             </div>
           </div>
-          <div class="col-lg-3 x-padding-1 b-margin-2">
+          <div class="col-lg-4 x-padding-1 b-margin-3">
             <div class="box-service box-shadow-1 flex justify-content-around flex-direction-column">
               <font-awesome-icon class="tc-purple fs-30" :icon="['fas', 'clipboard-list']" />
               <h2 class="t-center tc-purple">Emergência</h2>
@@ -232,7 +232,7 @@ export default (await import('vue')).defineComponent({
               </p>
             </div>
           </div>
-          <div class="col-lg-5 x-padding-1 b-margin-2">
+          <div class="col-lg-3 x-padding-1 b-margin-3">
             <div class="box-service box-shadow-1 flex justify-content-around flex-direction-column">
               <font-awesome-icon class="tc-purple fs-30" :icon="['fas', 'hospital']" />
               <h2 class="t-center tc-purple">Tecnologia EAD</h2>
@@ -241,8 +241,9 @@ export default (await import('vue')).defineComponent({
               </p>
             </div>
           </div>
-          <div class="col-lg-5 x-padding-1 b-margin-2 ">
-            <div class="box-service  flex justify-content-around flex-direction-column">
+
+          <div class="col-lg-4 x-padding-1 b-margin-3">
+            <div class="box-service box-shadow-1  flex justify-content-around flex-direction-column">
               <font-awesome-icon class="tc-purple fs-30" :icon="['fas', 'truck-medical']" />
               <h2 class="t-center tc-purple">Ambulância</h2>
               <p class="t-center fw-bold tc-gray-400">
@@ -251,8 +252,13 @@ export default (await import('vue')).defineComponent({
             </div>
           </div>
 
-          <div class="col-lg-3 x-padding-1 b-margin-2">
-            <div class="box-image-about"><img :src="medica" class="doctors-image" alt=""></div>
+          <div class="col-lg-3 x-padding-1 b-margin-1">
+
+
+            <div class="box-image-about">
+              <img :src="doctors" class="doctors-image" alt="" />
+
+            </div>
           </div>
         </div>
       </div>
