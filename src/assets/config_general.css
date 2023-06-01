@@ -41,7 +41,9 @@ body{
   margin: 0 auto;  
   position: relative;
 }
-
+.coloream{
+  color: #9B3490;
+}
 .container-full{
   width: 100%;
   min-height: 10px;
@@ -394,6 +396,15 @@ body{
   height: 500px;
   background-color: #fff;
   position: relative;
+}
+.box-image-about-and-text{
+  width: 100%;
+  height: 500px;
+  background-color: #a516bb;
+  position: relative;
+  
+
+ 
 }
 
 .box-image-about::after{

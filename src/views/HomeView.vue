@@ -2,13 +2,14 @@
 import background from "../assets/images/background.jpeg"
 import brand from "../assets/images/brand.png"
 import doctors from "../assets/images/doctors.jpeg"
-
+import medica from "../assets/images/medica.jpeg"
 export default (await import('vue')).defineComponent({
   data() {
     return {
       background,
       brand,
-      doctors
+      doctors,
+      medica
     }
   }
 })
@@ -30,8 +31,8 @@ export default (await import('vue')).defineComponent({
             <font-awesome-icon class="top-icons" :icon="['fab', 'square-twitter']" />
             <font-awesome-icon class="top-icons" :icon="['fab', 'linkedin']" />
             <font-awesome-icon class="top-icons" :icon="['fab', 'square-instagram']" />
-          </div>  
-        </div>        
+          </div>
+        </div>
       </div>
       <div class="container flex justify-content-between align-items-center">
         <div class="brand">
@@ -40,10 +41,10 @@ export default (await import('vue')).defineComponent({
         <nav>
           <ul class="flex menu">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Doctors</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Doutores</a></li>
+            <li><a href="#">Contatos</a></li>
           </ul>
         </nav>
       </div>
@@ -115,13 +116,13 @@ export default (await import('vue')).defineComponent({
                 compartilhar a vida.
               </p>
               <p class="t-margin-2 tc-gray-400">
-                <font-awesome-icon class="tc-purple" :icon="['fas', 'circle-check']"/> Navegue em Nosso Site
+                <font-awesome-icon class="tc-purple" :icon="['fas', 'circle-check']" /> Navegue em Nosso Site
               </p>
               <p class="t-margin-2 tc-gray-400">
-                <font-awesome-icon class="tc-purple" :icon="['fas', 'circle-check']"/> Escolha entre vários serviços
+                <font-awesome-icon class="tc-purple" :icon="['fas', 'circle-check']" /> Escolha entre vários serviços
               </p>
               <p class="t-margin-2 tc-gray-400 b-margin-2">
-                <font-awesome-icon class="tc-purple" :icon="['fas', 'circle-check']"/> Feedbacks
+                <font-awesome-icon class="tc-purple" :icon="['fas', 'circle-check']" /> Feedbacks
               </p>
               <button class="btn-solid-primary t-margin-3">Agendamentos</button>
             </div>
@@ -131,7 +132,7 @@ export default (await import('vue')).defineComponent({
       <div class="container t-margin-50">
         <div class="servico-hospital-title x-padding-1 b-margin-4">
           <h1 class="b-margin-1 tc-gray-300">Nossos Serviços</h1>
-        </div>   
+        </div>
         <div class="row flex flex-wrap ">
           <div class="col-lg-3 x-padding-1 b-margin-2">
             <div class="box-service box-shadow-1 flex justify-content-around flex-direction-column">
@@ -140,7 +141,7 @@ export default (await import('vue')).defineComponent({
               <p class="t-center fw-bold tc-gray-400">
                 O melhor médico é aquele que mais esperança inspira.
               </p>
-            </div>          
+            </div>
           </div>
           <div class="col-lg-3 x-padding-1 b-margin-2">
             <div class="box-service box-shadow-1 flex justify-content-around flex-direction-column">
@@ -149,7 +150,7 @@ export default (await import('vue')).defineComponent({
               <p class="t-center fw-bold tc-gray-400">
                 O melhor médico é aquele que mais esperança inspira.
               </p>
-            </div>          
+            </div>
           </div>
           <div class="col-lg-3 x-padding-1 b-margin-2">
             <div class="box-service box-shadow-1 flex justify-content-around flex-direction-column">
@@ -158,7 +159,7 @@ export default (await import('vue')).defineComponent({
               <p class="t-center fw-bold tc-gray-400">
                 O melhor médico é aquele que mais esperança inspira.
               </p>
-            </div>          
+            </div>
           </div>
           <div class="col-lg-3 x-padding-1 b-margin-2 ">
             <div class="box-service box-shadow-1 flex justify-content-around flex-direction-column">
@@ -167,7 +168,7 @@ export default (await import('vue')).defineComponent({
               <p class="t-center fw-bold tc-gray-400">
                 O melhor médico é aquele que mais esperança inspira.
               </p>
-            </div>          
+            </div>
           </div>
           <div class="col-lg-3 x-padding-1 b-margin-2">
             <div class="box-service box-shadow-1 flex justify-content-around flex-direction-column">
@@ -176,7 +177,7 @@ export default (await import('vue')).defineComponent({
               <p class="t-center fw-bold tc-gray-400">
                 O melhor médico é aquele que mais esperança inspira.
               </p>
-            </div>          
+            </div>
           </div>
           <div class="col-lg-3 x-padding-1 b-margin-2">
             <div class="box-service box-shadow-1 flex justify-content-around flex-direction-column">
@@ -185,7 +186,7 @@ export default (await import('vue')).defineComponent({
               <p class="t-center fw-bold tc-gray-400">
                 O melhor médico é aquele que mais esperança inspira.
               </p>
-            </div>          
+            </div>
           </div>
           <div class="col-lg-3 x-padding-1 b-margin-2">
             <div class="box-service box-shadow-1 flex justify-content-around flex-direction-column">
@@ -194,22 +195,70 @@ export default (await import('vue')).defineComponent({
               <p class="t-center fw-bold tc-gray-400">
                 O melhor médico é aquele que mais esperança inspira.
               </p>
-            </div>          
+            </div>
           </div>
           <div class="col-lg-3 x-padding-1 b-margin-2">
             <div class="box-service box-shadow-1 flex justify-content-around flex-direction-column">
+              <font-awesome-icon class="tc-purple fs-30" :icon="['fas', 'truck-medical']" />
+              <h2 class="t-center tc-purple">Ambulatorio</h2>
+              <p class="t-center fw-bold tc-gray-400">
+                O melhor médico é aquele que mais esperança inspira.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- parte de nossas especialidades , ajustes de CSS-->
+      <div class="container t-margin-50">
+        <div class="servico-hospital-title x-padding-1 b-margin-4">&nbsp;
+          <h1 class="b-margin-1 tc-gray-300">Nossas Especialidades</h1>
+        </div>
+        <div class="row flex flex-wrap ">
+          <div class="col-lg-3 x-padding-1 b-margin-2">
+            <div class="box-service box-shadow-1 flex justify-content-around flex-direction-column">
+              <font-awesome-icon class="tc-purple fs-30" :icon="['fas', 'user-doctor']" />
+              <h2 class="t-center tc-purple">Médicos Certitificados</h2>
+              <p class="t-center fw-bold tc-gray-400">
+                O melhor médico é aquele que mais esperança inspira.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 x-padding-1 b-margin-2">
+            <div class="box-service box-shadow-1 flex justify-content-around flex-direction-column">
+              <font-awesome-icon class="tc-purple fs-30" :icon="['fas', 'clipboard-list']" />
+              <h2 class="t-center tc-purple">Emergência</h2>
+              <p class="t-center fw-bold tc-gray-400">
+                O melhor médico é aquele que mais esperança inspira.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-5 x-padding-1 b-margin-2">
+            <div class="box-service box-shadow-1 flex justify-content-around flex-direction-column">
+              <font-awesome-icon class="tc-purple fs-30" :icon="['fas', 'hospital']" />
+              <h2 class="t-center tc-purple">Tecnologia EAD</h2>
+              <p class="t-center fw-bold tc-gray-400">
+                O melhor médico é aquele que mais esperança inspira.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-5 x-padding-1 b-margin-2 ">
+            <div class="box-service  flex justify-content-around flex-direction-column">
               <font-awesome-icon class="tc-purple fs-30" :icon="['fas', 'truck-medical']" />
               <h2 class="t-center tc-purple">Ambulância</h2>
               <p class="t-center fw-bold tc-gray-400">
                 O melhor médico é aquele que mais esperança inspira.
               </p>
-            </div>          
+            </div>
+          </div>
+
+          <div class="col-lg-3 x-padding-1 b-margin-2">
+            <div class="box-image-about"><img :src="medica" class="doctors-image" alt=""></div>
           </div>
         </div>
       </div>
     </main>
     <footer>
-        
+
     </footer>
   </div>
 </template>
