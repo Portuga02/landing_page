@@ -208,13 +208,14 @@ export default (await import('vue')).defineComponent({
           </div>
         </div>
       </div>
+
       <!-- parte de nossas especialidades , ajustes de CSS-->
-      <div class="container t-margin-50">
+      <div class="container t-margin-50 b-margin-4">
         <div class="servico-hospital-title x-padding-1 b-margin-4">&nbsp;
           <h1 class="b-margin-1 tc-gray-300">Nossas Especialidades</h1>
         </div>
         <div class="row flex flex-wrap ">
-          <div class="col-lg-3 x-padding-1 b-margin-2">
+          <div class="col-2 x-padding-1 b-margin-4">
             <div class="box-service box-shadow-1 flex justify-content-around flex-direction-column">
               <font-awesome-icon class="tc-purple fs-30" :icon="['fas', 'user-doctor']" />
               <h2 class="t-center tc-purple">Médicos Certitificados</h2>
@@ -223,7 +224,7 @@ export default (await import('vue')).defineComponent({
               </p>
             </div>
           </div>
-          <div class="col-lg-4 x-padding-1 b-margin-3">
+          <div class="col-xs-5 x-padding-1 b-margin-3">
             <div class="box-service box-shadow-1 flex justify-content-around flex-direction-column">
               <font-awesome-icon class="tc-purple fs-30" :icon="['fas', 'clipboard-list']" />
               <h2 class="t-center tc-purple">Emergência</h2>
@@ -232,7 +233,7 @@ export default (await import('vue')).defineComponent({
               </p>
             </div>
           </div>
-          <div class="col-lg-3 x-padding-1 b-margin-3">
+          <div class="col-xs-4 x-padding-1 b-margin-3">
             <div class="box-service box-shadow-1 flex justify-content-around flex-direction-column">
               <font-awesome-icon class="tc-purple fs-30" :icon="['fas', 'hospital']" />
               <h2 class="t-center tc-purple">Tecnologia EAD</h2>
@@ -242,7 +243,7 @@ export default (await import('vue')).defineComponent({
             </div>
           </div>
 
-          <div class="col-lg-4 x-padding-1 b-margin-3">
+          <div class="col-xs-2 x-padding-1 b-margin-3">
             <div class="box-service box-shadow-1  flex justify-content-around flex-direction-column">
               <font-awesome-icon class="tc-purple fs-30" :icon="['fas', 'truck-medical']" />
               <h2 class="t-center tc-purple">Ambulância</h2>
@@ -252,19 +253,28 @@ export default (await import('vue')).defineComponent({
             </div>
           </div>
 
-          <div class="col-lg-3 x-padding-1 b-margin-1">
-
-
-            <div class="box-image-about">
-              <img :src="doctors" class="doctors-image" alt="" />
+  <div class="row flex flex-wrap">
+            <div class="shadowNotice"></div>
+            <div class="col-lg-4 flex flex-direction-row flex-wrap">
+              <div class="box-image-about">
+                <img :src="doctors" class="box-image-about" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-6 flex flex-direction-column justify-content-center">
 
             </div>
           </div>
+
+
         </div>
+     
+        
+        
       </div>
+
     </main>
     <footer>
-
+      Rodapé do futuro , ainda inmp
     </footer>
   </div>
 </template>
