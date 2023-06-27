@@ -277,7 +277,11 @@ main {
   padding: 0px 15px;
   box-sizing: border-box;
 }
-
+.col-lg-4 {
+  width: 33.333%;
+  padding: 0px 15px;
+  box-sizing: border-box;
+}
 .m-0 {
   margin: 0;
 }

@@ -3,13 +3,16 @@ import background from "../assets/images/background.jpeg"
 import brand from "../assets/images/brand.png"
 import doctors from "../assets/images/doctors.jpeg"
 import medica from "../assets/images/medica.jpeg"
+import notices from "../assets/images/notices.jpg"
 export default (await import('vue')).defineComponent({
   data() {
     return {
       background,
       brand,
       doctors,
-      medica
+      medica,
+      notices,
+
     }
   }
 })
@@ -76,6 +79,7 @@ export default (await import('vue')).defineComponent({
           </div>
         </div>
       </div>
+
       <div class="container flex bg-white -t-margin-90 box-shadow-1 border-radius-10 z-index-9">
         <div class="box-header flex justify-content-around flex-direction-column">
           <font-awesome-icon class="tc-purple fs-30" :icon="['fas', 'house-chimney-medical']" />
@@ -98,6 +102,7 @@ export default (await import('vue')).defineComponent({
           <p class="t-center fw-bold tc-gray-400">Anos de Mercado</p>
         </div>
       </div>
+
       <div class="container t-margin-50">
         <div class="row flex flex-wrap">
           <div class="col-lg-6 flex flex-direction-column justify-content-center">
@@ -129,6 +134,7 @@ export default (await import('vue')).defineComponent({
           </div>
         </div>
       </div>
+
       <div class="container t-margin-50">
         <div class="servico-hospital-title x-padding-1 b-margin-4">
           <h1 class="b-margin-1 tc-gray-300">Nossos Serviços</h1>
@@ -215,7 +221,7 @@ export default (await import('vue')).defineComponent({
           <h1 class="b-margin-1 tc-gray-300">Nossas Especialidades</h1>
         </div>
         <div class="row flex flex-wrap ">
-          <div class="col-2 x-padding-1 b-margin-4">
+          <div class="col-lg-3 x-padding-1 b-margin-4">
             <div class="box-service box-shadow-1 flex justify-content-around flex-direction-column">
               <font-awesome-icon class="tc-purple fs-30" :icon="['fas', 'user-doctor']" />
               <h2 class="t-center tc-purple">Médicos Certitificados</h2>
@@ -224,7 +230,7 @@ export default (await import('vue')).defineComponent({
               </p>
             </div>
           </div>
-          <div class="col-xs-5 x-padding-1 b-margin-3">
+          <div class="col-lg-2 x-padding-1 b-margin-3">
             <div class="box-service box-shadow-1 flex justify-content-around flex-direction-column">
               <font-awesome-icon class="tc-purple fs-30" :icon="['fas', 'clipboard-list']" />
               <h2 class="t-center tc-purple">Emergência</h2>
@@ -233,7 +239,7 @@ export default (await import('vue')).defineComponent({
               </p>
             </div>
           </div>
-          <div class="col-xs-4 x-padding-1 b-margin-3">
+          <div class="col-lg-3 x-padding-1 b-margin-3">
             <div class="box-service box-shadow-1 flex justify-content-around flex-direction-column">
               <font-awesome-icon class="tc-purple fs-30" :icon="['fas', 'hospital']" />
               <h2 class="t-center tc-purple">Tecnologia EAD</h2>
@@ -243,35 +249,53 @@ export default (await import('vue')).defineComponent({
             </div>
           </div>
 
-          <div class="col-xs-2 x-padding-1 b-margin-3">
+          <div class="fs-23 fw-4 t-center t-margin-3 b-margin-1 color-white">
             <div class="box-service box-shadow-1  flex justify-content-around flex-direction-column">
               <font-awesome-icon class="tc-purple fs-30" :icon="['fas', 'truck-medical']" />
-              <h2 class="t-center tc-purple">Ambulância</h2>
-              <p class="t-center fw-bold tc-gray-400">
+              <h1 class="fs-25 fw-4 t-center t-margin-3 b-margin-1 color-white">Ambulância</h1>
+              <p class="color-white t-center">
                 O melhor médico é aquele que mais esperança inspira.
               </p>
             </div>
           </div>
 
-  <div class="row flex flex-wrap">
-            <div class="shadowNotice"></div>
-            <div class="col-lg-4 flex flex-direction-row flex-wrap">
-              <div class="box-image-about">
-                <img :src="doctors" class="box-image-about" alt="" />
-              </div>
-            </div>
-            <div class="col-lg-6 flex flex-direction-column justify-content-center">
-
+          <div class="col-lg-6 flex-direction-column justify-content-center" style="">
+            <div class="box-image-about h-full">
+              <img :src="medica" class="doctor-about-image" alt="" />
             </div>
           </div>
-
-
         </div>
-     
-        
-        
-      </div>
+        <!-- iniciando aqui o campo de menu inferior -->
+        <div class="row flex flex-wrap t-margin-50">
+          <div class="col-lg-12 p-0 flex flex-direction-row flex-wrap">
+            <div class="notices" :style="'background-image: url(' + notices + ');'">
+              <div class="shadowNotice"></div>
+              <div class="boxNotice flex flex-direction-column justify-content-center align-items-center tc-white">
+                <h1 class="b-margin-2">Sobre a Ti Saúde</h1>
+                <p class="t-center">
+                  O melhor médico, é aquele que mais inspira esperança
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- menu abaixo da imagem -->
+        <div class="col-lg-12 p-0 flex flex-direction-row flex-wrap">
+          <div class="noticeNavigation">
+            <ul>
+              <li class="noticeActive">Sobre a ti saude</li>
+              <li>Farmacia </li>
+              <li>Pesquisas</li>
+              <li>CCU & ICU</li>
+              <li>Médicos</li>
 
+            </ul>
+          </div>
+        </div>
+      </div>
+        <!-- meet outr doctors -->
+
+        
     </main>
     <footer>
       Rodapé do futuro , ainda inmp
